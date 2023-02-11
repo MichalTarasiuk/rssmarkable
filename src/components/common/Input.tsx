@@ -28,6 +28,7 @@ export const Input = forwardRef<HTMLInputElement, InputProps>(
               "block w-full rounded-md border-gray-300 py-2.5 px-4 transition ease-in-out focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm",
               error && "border-red-500",
             )}
+            spellCheck={props.type === "email" || props.type === "password"}
             type={props.type ?? "text"}
           />
           <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center pr-3">

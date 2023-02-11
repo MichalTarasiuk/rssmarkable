@@ -27,12 +27,7 @@ export const FeedTile = memo<FeedTileProps>(({ url, onChange, isChecked }) => {
   return (
     <>
       <li className="flex items-center gap-6">
-        <Checkbox
-          name={url}
-          // eslint-disable-next-line @typescript-eslint/no-unsafe-argument
-          onChange={onChange}
-          isChecked={isChecked}
-        />
+        <Checkbox name={url} onChange={onChange} isChecked={isChecked} />
         <div
           className={twMerge(
             "group relative flex w-full items-center rounded-2xl bg-white p-2 shadow focus-within:ring-2 focus-within:ring-indigo-500 focus-within:ring-offset-2 md:py-1",
