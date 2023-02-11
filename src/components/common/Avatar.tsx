@@ -12,8 +12,6 @@ interface AvatarProps {
 export const Avatar = memo<AvatarProps>(({ image, name, isSmall = false }) => {
   const sizeClassName = isSmall ? "h-10 w-10" : "h-14 w-14";
 
-  console.log({ sizeClassName });
-
   if (image) {
     return (
       // eslint-disable-next-line @next/next/no-img-element
